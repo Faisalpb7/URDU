@@ -6,6 +6,13 @@
 	font-style: normal;
 	font-weight: 100;
 }
+@font-face{
+	font-family: 'urdu';
+	src: url('../fonts/fonts/Fajer\ Noori\ Nastalique\ 15-12-2006.ttf');
+}
+.font-urdu{
+	font-family: 'urdu';
+}
 
 .font-mal{
 	font-family: 'malayalam';	
@@ -125,7 +132,7 @@ background: radial-gradient(circle, rgba(2,115,95,1) 0%, rgba(0,38,17,1) 100%);
 	font-weight: 400;
 	padding: 8px 2px;
 	border-radius: 0;
-	margin: 9px 20px 0 20px;
+	margin: 9px 10px 0 15px;
 }
 #menu.navbar-default .navbar-nav > li > a:after {
 	display: block;
@@ -374,7 +381,34 @@ background: radial-gradient(circle, rgba(255,254,240,0.4374124649859944) 0%, rgb
 	border-right: 0;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.text-urdu{
+	line-height:40px;
+	margin: 30px 0;
+	font-size: 30px;
+	text-align: right;
+	word-spacing: normal;
+}
 
+#urdu-quote{
+	background-image: url(../img/bg1.jpg);
+	background-size: cover;
+	opacity: 1;
+	padding: 50px;
+	color: rgb(69, 0, 78);
+}
+
+#urdu-quote p{
+	line-height: 24px;
+	margin: 30px 0;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 20px;
+	font-weight: 500;
+}
+
+#admission-form{
+	background: rgb(242, 252, 235);
+}
 /* Services Section */
 #course {
 	padding: 100px 0;
@@ -423,7 +457,7 @@ background: radial-gradient(circle, rgba(2,14,64,1) 0%, rgba(10,58,68,1) 100%);
 }
 
 .icon-img{
-	width: 150px;
+	width: 110px;
 }
 /* teacher Section */
 #teacher {
@@ -717,6 +751,9 @@ color: #777;
 
 @media (max-width: 768px) {
 #about img {
+	margin: 50px 0;
+}
+#about-urdu img{
 	margin: 50px 0;
 }
 }
