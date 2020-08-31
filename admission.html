@@ -68,43 +68,43 @@
             <h3 class="color-1 font-24">ADMISSION  FORM</h3>
         </div>
         <div class="col-md-12 admission-form">
-            <form action="">
+            <form id="application-form" action="">
                 <div class="form-group">
                     <label class="font-22 font-mal" for="name">പേര്</label>
                      <input type="text" class="form-control" name="name" id="name" required>
                   </div>
                 <div class="form-group">
                     <label class="font-22 font-mal" for="name">അഡ്രസ്സ്</label>
-                     <input type="text" class="form-control" name="adress" id="adress" required>
+                     <input type="text" class="form-control" name="address" id="address" required>
                   </div>
                   <div class="row">
                     <div class="col-md-4 form-group">
                         <label class="font-22 font-mal" for="name">സ്ഥലം</label>
-                        <input type="text" class="form-control" name="adress" id="adress" required>
+                        <input type="text" class="form-control" name="place" id="place" required>
                     </div>
                     <div class="col-md-4 form-group">
                         <label class="font-22 font-mal" for="name">താലൂക്ക്</label>
-                        <input type="text" class="form-control" name="adress" id="adress" required>
+                        <input type="text" class="form-control" name="taluk" id="taluk" required>
                     </div>
                     <div class="col-md-4 form-group">
                         <label class="font-22 font-mal" for="name">ജില്ല</label>
-                        <input type="text" class="form-control" name="adress" id="adress" required>
+                        <input type="text" class="form-control" name="district" id="district" required>
                     </div>
                     <div class="col-md-4 form-group">
                         <label class="font-22 font-mal" for="name">സംസ്ഥാനം </label>
-                        <input type="text" class="form-control" name="adress" id="adress" required>
+                        <input type="text" class="form-control" name="state" id="state" required>
                     </div>
                     <div class="col-md-4 form-group">
                         <label class="font-22 font-mal" for="name">രാജ്യം</label>
-                        <input type="text" class="form-control" name="adress" id="adress" required>
+                        <input type="text" class="form-control" name="country" id="country" required>
                     </div>
                     <div class="col-md-4 form-group">
                         <label class="font-22 font-mal" for="name">പിന്‍കോഡ് </label>
-                        <input type="text" class="form-control" name="adress" id="adress" required>
+                        <input type="text" class="form-control" name="pincode" id="pincode" required>
                     </div>
                     <div class="col-md-12 form-group">
                       <label class="font-22 font-mal" for="name">താല്ക്കാലിക അഡ്രസ്സ് <small>(ഉണ്ടെങ്കില്‍)</small></label>
-                       <input type="text" class="form-control" name="adress" id="adress" >
+                       <input type="text" class="form-control" name="temp-adress" id="temp-adress" >
                     </div>
                     <div class="col-md-6 form-group">
                       <label class="font-22 font-mal" for="name">ജോലി</label>
@@ -112,7 +112,7 @@
                     </div>
                     <div class="col-md-6 form-group">
                       <label class="font-22 font-mal" for="name">വിദേശത്താണെങ്കില്‍, എവിടെ?</label>
-                       <input type="text" class="form-control" name="gulf" id="gulf">
+                       <input type="text" class="form-control" name="job-place" id="job-place">
                     </div>
                     <div class="col-md-6 form-group">
                         <label class="font-22 font-mal" for="name">വാട്‌സ്ആപ്പ് നമ്പര്‍</label>
@@ -124,32 +124,32 @@
                     </div>
                     <div class="col-md-12 form-group">
                         <label class="font-22 font-mal" for="knowledge">ഉറുദുവില്‍ പരിജ്ഞാനം </label>
-                        <select class="form-control" id="exampleFormControlSelect1" required>
+                        <select class="form-control" id="urdu-knowledge" name="urdu-knowledge" required>
                           <option value="knowledge-yes" selected>ഉണ്ട് </option>
                           <option value="knowledge-no">ഇല്ല  </option>
                         </select>
                     </div>
                     <div class="col-xs-12">
-                      <label class="font-22 font-mal" for="knowledge">ഉണ്ടെങ്കിൽ: </label>
+                      <label class="font-22 font-mal" for="skills" id="skills" name="skills">ഉണ്ടെങ്കിൽ: </label>
                     </div>
                     <div class="col-md-9">
                       <div class="row">
                         <div class="col-md-3">
                           <div class="form-group">
                             <label class="font-20 font-mal" >എഴുത്ത് &nbsp;</label>
-                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                            <input type="checkbox" id="write-skill" name="write-skill"  value="yes">
                           </div>
                         </div>
                         <div class="col-md-3">
                           <div class="form-group">
                             <label class="font-20 font-mal" >വായന &nbsp;</label>
-                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                            <input type="checkbox" id="read-skill" name="read-skill" value="yes">
                           </div>
                         </div>
                         <div class="col-md-3">
                           <div class="form-group">
                             <label class="font-20 font-mal" >സംസാരം &nbsp;</label>
-                            <input type="checkbox" id="inlineCheckbox1" value="option1">
+                            <input type="checkbox" id="speaking-skill" name="speaking-skill" value="yes">
                           </div>
                         </div>
                       </div>
@@ -177,7 +177,7 @@
     </div>
   </div>
   
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
   <script type="text/javascript" src="js/bootstrap.js"></script> 
   <script type="text/javascript" src="js/SmoothScroll.js"></script> 
@@ -185,5 +185,25 @@
   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
   <script type="text/javascript" src="js/contact_me.js"></script> 
   <script type="text/javascript" src="js/main.js"></script>
+  <script>
+        $("#application-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbx9fQN_MNSEhvO4Arrs46zyabVUTXTPv5xUB9kW/exec",
+                data:$("#application-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    //window.location.reload()
+                    window.location.href="index.html"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+  </script>
+
   </body>
   </html>
